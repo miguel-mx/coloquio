@@ -1,0 +1,22 @@
+
+<div class="page-header">
+    <h1>Bloque de Coloquio</h1>
+</div>
+
+    <div class="row">
+        <div class="col-md-12">
+            {{ coloquio.evento.seminario }}
+            <h4>{{ coloquio.evento.titulo }}</h4>
+            <strong>{{ coloquio.evento.ponente }}</strong> - <em>{{ coloquio.evento.origen }}</em> <br>
+            {% if coloquio.evento.resumen %}
+                <div class="well-sm panel-primary">
+                    {{ coloquio.evento.resumen }}
+                </div>
+            {% endif %}
+            {{ coloquio.evento.fecha }} <br>
+            {{ coloquio.evento.lugar }} <br>
+            {{ coloquio.evento.hora }}
+        </div>
+    </div>
+    <div class="page-header"></div>
+

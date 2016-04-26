@@ -1,0 +1,5 @@
+name: coloquio
+type: module
+description: Plugin block Coloquio
+core: 8.x
+package: Custom

@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains coloquio.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function coloquio_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the coloquio module.
+    case 'help.page.coloquio':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Plugin block Coloquio') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme()
+ * @return mixed
+ *
+ * Template for SeminariosController
+ */
+function coloquio_theme() {
+  $theme['coloquio_ccm'] = [
+      'variables' => ['coloquio' => NULL],
+      'template' => 'coloquio',
+  ];
+
+  return $theme;
+}
