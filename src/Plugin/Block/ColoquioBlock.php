@@ -23,7 +23,7 @@ class ColoquioBlock extends BlockBase
 
     // Return: Render array
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "132.248.196.44/seminarios-CCM/web/app.php/evento/coloquio-semana.xml");
+    curl_setopt($ch, CURLOPT_URL, "http://gaspacho.matmor.unam.mx/seminarios2/evento/coloquio-semana.xml");
     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/xml'));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
