@@ -1,3 +1,20 @@
+
+{% for evento in seminarios.evento %}
+    <br>
+    {{ evento.seminario }}<br>
+    <em>{{ evento.titulo }}</em><br>
+    <strong>{{ evento.ponente }}</strong> - <em>{{ evento.origen }}</em>
+{#    {% if evento.resumen %}
+        <p>{{ evento.resumen }}</p>
+    {% endif %}#}
+    {{ evento.fecha }} <br>
+    {{ evento.lugar }} <br>
+    {{ evento.hora }}
+    <br>
+{% endfor %}
+
+{#
+
     <div class="row">
         <div class="col-md-12">
             {{ coloquio.evento.seminario }}
@@ -15,3 +32,4 @@
     </div>
     <div class="page-header"></div>
 
+#}

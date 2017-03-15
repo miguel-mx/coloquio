@@ -31,7 +31,7 @@ function coloquio_help($route_name, RouteMatchInterface $route_match) {
  */
 function coloquio_theme() {
   $theme['coloquio_ccm'] = [
-      'variables' => ['coloquio' => NULL],
+      'variables' => ['seminarios' => NULL],
       'template' => 'coloquio',
   ];
 
