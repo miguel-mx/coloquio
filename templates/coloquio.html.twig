@@ -1,9 +1,7 @@
 
-<div class="row">
-
-<span style="smaller">
+<div class="row" style="background: #e6e6e6; padding-left: 10px; padding-right: 10px">
+<h3></h3>
 {% for evento in seminarios.evento %}
-    <br>
     {{ evento.seminario }}<br>
     <em>{{ evento.titulo }}</em><br>
     <strong>{{ evento.ponente }}</strong> - <em>{{ evento.origen }}</em>
@@ -13,9 +11,8 @@
     {{ evento.fecha }} <br>
     {{ evento.lugar }} <br>
     {{ evento.hora }}
-    <br>
+    <hr>
 {% endfor %}
-</span>
 </div>
 {#
 
